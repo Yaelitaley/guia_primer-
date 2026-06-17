@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Guía de Estudio - Desarrollo Empresarial Web</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f6f9;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#0d6efd,#0056b3);
+color:white;
+padding:40px;
+text-align:center;
+}
+
+header h1{
+font-size:2.5rem;
+}
+
+nav{
+position:sticky;
+top:0;
+background:#222;
+padding:15px;
+z-index:1000;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:10px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#0d6efd;
+}
+
+section{
+max-width:1100px;
+margin:25px auto;
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+h2{
+color:#0d6efd;
+margin-bottom:15px;
+}
+
+.card{
+background:#eef5ff;
+padding:15px;
+margin:10px 0;
+border-left:5px solid #0d6efd;
+border-radius:8px;
+}
+
+ul{
+padding-left:20px;
+}
+
+#flashcards{
+margin-top:20px;
+}
+
+.contenedor-tarjetas{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.flashcard{
+height:180px;
+cursor:pointer;
+position:relative;
+transform-style:preserve-3d;
+transition:.7s;
+}
+
+.flashcard.flip{
+transform:rotateY(180deg);
+}
+
+.cara{
+position:absolute;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+border-radius:15px;
+backface-visibility:hidden;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.frente{
+background:#0d6efd;
+color:white;
+}
+
+.atras{
+background:white;
+color:#333;
+border:2px solid #0d6efd;
+transform:rotateY(180deg);
+}
+
+.quiz{
+margin-top:20px;
+}
+
+.pregunta{
+margin-bottom:20px;
+}
+
+button{
+padding:12px 25px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#004db3;
+}
+
+#resultado{
+font-size:1.2rem;
+font-weight:bold;
+margin-top:15px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>📚 Guía de Estudio</h1>
+<h2>Desarrollo Empresarial Web</h2>
+<p>Sexto Cuatrimestre</p>
+</header>
+
+<nav>
+<a href="#tema1">Introducción</a>
+<a href="#tema2">Empresa</a>
+<a href="#tema3">Personal</a>
+<a href="#tema4">Cronogramas</a>
+<a href="#flashcards">Tarjetas</a>
+<a href="#quiz">Quiz</a>
+</nav>
+
+<section id="tema1">
+
+<h2>🌐 Tema 1: Introducción al Desarrollo Empresarial Web</h2>
+
+<div class="card">
+Un proyecto web profesional consiste en planificar, diseñar, desarrollar y hacer crecer un sitio web para cumplir objetivos empresariales.
+</div>
+
+<div class="card">
+<h3>Tipos de sitios web</h3>
+
+<ul>
+<li>Web Corporativa</li>
+<li>E-Commerce</li>
+<li>Landing Page</li>
+<li>Aplicación Web</li>
+<li>Catálogo o Portal</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>Fases del desarrollo web</h3>
+
+<ol>
+<li>Planificación</li>
+<li>Diseño UX/UI</li>
+<li>Desarrollo</li>
+<li>SEO y contenido</li>
+<li>Pruebas</li>
+<li>Lanzamiento</li>
+</ol>
+
+</div>
+
+</section>
+
+<section id="tema2">
+
+<h2>🏢 Tema 2: Identificación de la Empresa</h2>
+
+<div class="card">
+<h3>Permisos</h3>
+<ul>
+<li>Legales</li>
+<li>Fiscales</li>
+<li>Laborales</li>
+<li>Municipales</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Tipos de Empresa</h3>
+<ul>
+<li>Sociedad Anónima (S.A.)</li>
+<li>Sociedad de Responsabilidad Limitada (S. de R.L.)</li>
+<li>Persona Física con Actividad Empresarial</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>FODA</h3>
+<p>Fortalezas, Oportunidades, Debilidades y Amenazas.</p>
+</div>
+
+</section>
+
+<section id="tema3">
+
+<h2>👥 Tema 3: Análisis del Personal</h2>
+
+<div class="card">
+<ul>
+<li>Equipos: 55% - 65%</li>
+<li>Mano de obra: 15% - 25%</li>
+<li>Ingeniería: 5% - 10%</li>
+<li>Logística: 5% - 10%</li>
+<li>Administración: 5% - 10%</li>
+</ul>
+</div>
+
+<div class="card">
+CPM = Costo del Personal Mensual
+
+Ejemplo:
+$80,000 ÷ 4 meses = $20,000
+</div>
+
+<div class="card">
+BAC = Presupuesto total aprobado del proyecto.
+</div>
+
+</section>
+
+<section id="tema4">
+
+<h2>📅 Tema 4: Cronogramas</h2>
+
+<div class="card">
+Cronograma: herramienta que organiza actividades y tiempos de un proyecto.
+</div>
+
+<div class="card">
+<h3>Tipos</h3>
+
+<ul>
+<li>Diagrama de Gantt</li>
+<li>CPM (Ruta Crítica)</li>
+<li>PERT</li>
+</ul>
+
+</div>
+
+</section>
+
+<section id="flashcards">
+
+<h2>🧠 Tarjetas de Estudio</h2>
+
+<div class="contenedor-tarjetas">
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es FODA?</div>
+<div class="cara atras">Fortalezas, Oportunidades, Debilidades y Amenazas.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es una Web Corporativa?</div>
+<div class="cara atras">Representa a una empresa y sus servicios.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es una Landing Page?</div>
+<div class="cara atras">Página enfocada en un objetivo o campaña específica.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es CPM?</div>
+<div class="cara atras">Costo del Personal Mensual.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es BAC?</div>
+<div class="cara atras">Presupuesto total aprobado del proyecto.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es un Cronograma?</div>
+<div class="cara atras">Planificación de actividades dentro de un tiempo determinado.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué es una Razón Social?</div>
+<div class="cara atras">Nombre legal oficial de una empresa.</div>
+</div>
+
+<div class="flashcard" onclick="this.classList.toggle('flip')">
+<div class="cara frente">¿Qué significa UX/UI?</div>
+<div class="cara atras">Experiencia e interfaz de usuario.</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>🔥 Preguntas Probables de Examen</h2>
+
+<ol>
+<li>¿Qué es un proyecto web profesional?</li>
+<li>Menciona los tipos de sitios web.</li>
+<li>¿Qué es una razón social?</li>
+<li>¿Qué es FODA?</li>
+<li>¿Qué es CPM?</li>
+<li>¿Qué es BAC?</li>
+<li>¿Qué es un cronograma?</li>
+<li>Diferencia entre Gantt y PERT.</li>
+<li>¿Qué es una Landing Page?</li>
+<li>¿Cuáles son las fases del desarrollo web?</li>
+</ol>
+
+</section>
+
+<section id="quiz">
+
+<h2>📝 Mini Examen</h2>
+
+<div class="quiz">
+
+<div class="pregunta">
+<p>1. ¿Qué significa FODA?</p>
+<input type="radio" name="p1" value="1"> Fortalezas, Oportunidades, Debilidades y Amenazas<br>
+<input type="radio" name="p1" value="0"> Finanzas, Organización, Datos y Administración
+</div>
+
+<div class="pregunta">
+<p>2. ¿Qué representa una web corporativa?</p>
+<input type="radio" name="p2" value="1"> Una empresa y sus servicios<br>
+<input type="radio" name="p2" value="0"> Un videojuego
+</div>
+
+<div class="pregunta">
+<p>3. ¿Qué es CPM?</p>
+<input type="radio" name="p3" value="1"> Costo del Personal Mensual<br>
+<input type="radio" name="p3" value="0"> Control de Procesos Modernos
+</div>
+
+<button onclick="calificar()">Calificar</button>
+
+<div id="resultado"></div>
+
+</div>
+
+</section>
+
+<footer>
+Guía de Estudio - Desarrollo Empresarial Web
+</footer>
+
+<script>
+
+function calificar(){
+
+let total = 0;
+
+const respuestas = document.querySelectorAll('input[type="radio"]:checked');
+
+respuestas.forEach(r=>{
+total += parseInt(r.value);
+});
+
+document.getElementById("resultado").innerHTML =
+"Tu calificación es: " + total + "/3";
+
+}
+
+</script>
+
+</body>
+</html>
